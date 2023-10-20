@@ -19,3 +19,46 @@ there to install Homebrew.  It may take a while.
 
 Afterwards, you might see an error message such as this one:
 
+<img width="687" alt="image" src="https://github.com/ccs-1l-f23/opencv-python-spike/assets/1119017/83b14328-56b6-46fb-ba75-56fe84d9f401">
+
+If you get that, then put in the command it suggests.  It may take a very long time before you see any output (5-10 minutes), so be patient.
+
+Eventually, though, it should finish. After that, type `brew update`.  Then you are ready for the next step.
+
+# Installing pyenv and it's dependencies
+
+We got the idea to install pyenv because we were not able to use opencv with the default version of Python on our mac.
+
+So we read this article: <https://medium.com/macoclock/how-to-install-and-manage-multiple-python-versions-on-macos-ca01a5e398d4>
+
+To install pyenv, use these commands:
+
+```
+brew install pyenv
+brew install openssl readline sqlite3 xz zlib
+```
+
+Then you are ready to create a virtual environment and set it up using a particular version of Python
+
+# Setting up opencv
+
+First, install this version of Python:
+
+```
+pyenv install  3.9.18   
+```
+
+Then, create a `venv` ( a Python virtual environment) using that version of Python:
+
+```
+virtualenv venv --python=python3.9
+```
+
+Then install your dependencies, and opencv:
+
+```
+pip install numpy
+pip install matplotlib
+pip install opencv-python
+```
+
