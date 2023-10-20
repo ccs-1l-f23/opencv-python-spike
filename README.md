@@ -48,6 +48,18 @@ First, install this version of Python:
 pyenv install  3.9.18   
 ```
 
+# Install virtualenv
+
+To install virtualenv, use:
+
+```
+pip install virtualenv
+```
+
+# Creating your virtualenv
+
+For the next instructions, you should create a new empty git repo (or at the very least, create a new empty directory).
+
 Then, create a `venv` ( a Python virtual environment) using that version of Python:
 
 ```
