@@ -3,7 +3,7 @@
 In this repo, we are working with this tutorial, and
 trying to get it working on Mac.
 
-* <https://pythonprogramming.net/loading-images-python-opencv-tutorial/>
+* <https://www.section.io/engineering-education/creating-a-hand-tracking-module/>
 
 # Setup steps
 
@@ -54,11 +54,17 @@ Then, create a `venv` ( a Python virtual environment) using that version of Pyth
 virtualenv venv --python=python3.9
 ```
 
+Activate the virtual environment with this command.  (This is the only command that you might actually need to do every time you start a new
+terminal session for this project.)
+
+```
+source venv/bin/activate
+```
+
 Then install your dependencies, and opencv:
 
 ```
-pip install numpy
-pip install matplotlib
+pip install mediapipe
 pip install opencv-python
 ```
 
