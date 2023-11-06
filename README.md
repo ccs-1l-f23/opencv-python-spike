@@ -80,3 +80,12 @@ pip install mediapipe
 pip install opencv-python
 ```
 
+# Sound Machine
+
+To install the version of sound-machine from rhelmot/sound-machine, do this:
+
+```
+pip install git+https://github.com/rhelmot/sound-machine.git
+```
+
+The version you get with `pip install sound-machine` will not work with any Python from 3.7 onward because `async` is a keyword.
